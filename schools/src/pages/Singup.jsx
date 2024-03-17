@@ -22,8 +22,9 @@ const Singup = () => {
   };
 
   return (
-    <div className="flex flex-row justify-center items-center h-auto bg-white mx-auto gap-3 lg:gap-0">
-      <div className="w-full mr-auto px-5 lg:w-1/2 bg-white rounded-lg lg:rounded-l-none flex flex-col justify-start items-center ">
+    <div className="flex container mx-auto max-w-lg w-full ">
+    <div className="w-full px-5  bg-white rounded-lg lg:rounded-l-none flex flex-col justify-center items-center mt-10 p-5">
+    
         <div className="mt-8 font-bold text-black text-3xl ">
           Create an account.
         </div>
@@ -78,16 +79,9 @@ const Singup = () => {
             Don't have an account?
           </div>
 
-          <div className="mt-4 font-bold text-[#6e7787] text-sm">
-            OR CONTINUE WITH
-          </div>
         </div>
-      </div>
-      <img
-        className="relative w-1/2 lg:w-[750px]"
-        alt="Imagesingup"
-        src="https://c.animaapp.com/RBZJBQ2y/img/image-55.png"
-      />
+      
+    </div>
     </div>
   );
 };

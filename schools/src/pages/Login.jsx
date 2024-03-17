@@ -26,13 +26,9 @@ const Login = () => {
   };
 
   return (
-    <div className="flex flex-row justify-center items-center h-auto bg-white mx-auto gap-3 lg:gap-0">
-      <img
-        className="relative w-1/2 lg:w-[750px] lg:max-h-screen mr-auto"
-        alt="ImageLogin"
-        src="https://c.animaapp.com/zUkxeuy8/img/image-55.png"
-      />
-      <div className="w-full px-5 lg:w-1/2 bg-white rounded-lg lg:rounded-l-none flex flex-col justify-center items-center">
+    <div className="flex container mx-auto max-w-lg w-full ">
+
+      <div className="w-full px-5  bg-white rounded-lg lg:rounded-l-none flex flex-col justify-center items-center mt-10">
         <div className="mt-8 font-bold text-black text-3xl">Hello.</div>
         <div className="mt-2 text-[#9095a0] text-xl">Welcome back</div>
         {authState.error && (
@@ -100,6 +96,8 @@ const Login = () => {
           </div>
         </div>
       </div>
+
+
     </div>
   );
 };

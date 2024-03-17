@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <div className="flex flex-col max-w-full h-[80px] mx-auto justify-center items-center bg-[#000000]">
+    <div className="flex flex-col max-w-full h-20  mx-auto justify-center items-center bg-[#000000] fixed bottom-0 w-full">
       <p className=" text-white text-sm">
         © prueba INTERRAPIDISIMO Media Direct, LLC. All rights reserved
       </p>
