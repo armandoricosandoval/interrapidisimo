@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+#Registro de Estudiantes - Prueba Técnica
+Esta aplicación es el resultado de la prueba técnica realizada para la posición de Desarrollador Frontend, utilizando tecnologías como React, Tailwind CSS y Firebase para autenticación. A continuación se detalla la funcionalidad implementada y los aspectos a evaluar:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##Funcionalidades Implementadas
+CRUD de Estudiantes: Los usuarios pueden realizar un registro en línea, adherirse a un programa de créditos y seleccionar hasta tres materias.
+Selección de Materias: Existen 10 materias disponibles, cada una equivalente a 3 créditos.
+Asignación de Profesores: Hay 5 profesores que dictan 2 materias cada uno, evitando que un estudiante tenga clases con el mismo profesor.
+Detalle del Estudiante: Se permite a cada estudiante ver su detalle personal, incluyendo las materias inscritas y el valor en dólares, así como su conversión a euros utilizando la tasa de cambio del día.
+##Puntos Adicionales
+Transición sin Refresco: Toda la interacción dentro de la aplicación se realiza sin necesidad de refrescar la página, manteniendo los datos y valores precargados.
+Mini Dashboard: Se agregó un mini dashboard en la parte superior de la pantalla con datos relevantes que se van actualizando en tiempo real.
+Uso de Estados: Se ha dado especial atención al uso de estados de la aplicación para mantener datos y visualizar información de manera eficiente.
+Diseño Visual y Experiencia de Usuario: Se ha evaluado la calidad del diseño visual y la experiencia de usuario tanto en la estructura como en la navegación de la aplicación.
+Entregables
+Los resultados de la prueba técnica se encuentran adjuntos en el documento enviado. Cualquier consulta o comentario sobre la implementación será bienvenida.
 
-## Available Scripts
+##¡Gracias por la oportunidad de participar en esta prueba técnica! Si hay alguna pregunta adicional o si se requiere más información, no dude en contactarme.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Nota: Para ejecutar la aplicación, asegúrese de tener instalado Node.js y npm. Luego, clone este repositorio y ejecute npm install seguido de npm start para iniciar la aplicación en su navegador predeterminado.
