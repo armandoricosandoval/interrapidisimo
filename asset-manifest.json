@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/interrapidisimo/static/css/main.86bbe444.css",
+    "main.js": "/interrapidisimo/static/js/main.7380d089.js",
+    "static/js/453.241a439d.chunk.js": "/interrapidisimo/static/js/453.241a439d.chunk.js",
+    "index.html": "/interrapidisimo/index.html",
+    "main.86bbe444.css.map": "/interrapidisimo/static/css/main.86bbe444.css.map",
+    "main.7380d089.js.map": "/interrapidisimo/static/js/main.7380d089.js.map",
+    "453.241a439d.chunk.js.map": "/interrapidisimo/static/js/453.241a439d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.86bbe444.css",
+    "static/js/main.7380d089.js"
+  ]
+}
