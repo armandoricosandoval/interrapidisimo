@@ -6,14 +6,14 @@ import {
   signInWithPopup,
   signOut,
 } from "firebase/auth";
-import { firebaseAppAuth } from "../firebase/firebase";
+import { firebaseAppAuth } from "../../firebase/firebase";
 import {
   GET_AUTH_SUCCESS,
   SET_AUTH_ERROR,
   SET_AUTH_LOADING,
   SET_AUTH_SUCCESS,
   SET_CURRENT_USER,
-} from "./types";
+} from "../types";
 
 export const setCurrentUser = (user) => ({
   type: SET_CURRENT_USER,

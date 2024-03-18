@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-import { logout } from "../redux/authActions";
+import { logout } from "../redux/actions/authActions";
+
 
 const Sidebar = () => {
   const dispatch = useDispatch();
@@ -45,7 +46,7 @@ const Sidebar = () => {
             className="w-6"
           />
           <div className="text-sm leading-[22px] text-[#565e6c] mt-px">
-            Projects
+            Materias Inscritas
           </div>
         </div>
         <div className="bg-black/0 flex flex-row gap-2 w-full h-10 items-start pt-2 px-4">
@@ -59,20 +60,10 @@ const Sidebar = () => {
             to="/writers"
             className="text-sm leading-[22px] text-[#565e6c] mt-px"
           >
-            Writers
+            Comunidad Estudiantil
           </Link>
         </div>
-        <div className="bg-black/0 flex flex-row gap-2 w-full h-10 font-['Poppins'] items-start pt-2 px-4">
-          <img
-            src="https://file.rendit.io/n/JS3S71h5MAU42qOjUK44.svg"
-            alt="ChartPie"
-            id="ChartPie"
-            className="w-6"
-          />
-          <div className="text-sm leading-[22px] text-[#565e6c] mt-px">
-            Ratings
-          </div>
-        </div>
+        
         <div className="bg-black/0 flex flex-row gap-2 w-full h-10 font-['Poppins'] items-start pt-2 px-4">
           <img
             src="https://file.rendit.io/n/FsIiCIS3l1WC4nbz2MyX.svg"
@@ -81,7 +72,7 @@ const Sidebar = () => {
             className="w-6"
           />
           <div className="text-sm leading-[22px] text-[#565e6c] mt-px">
-            Messages
+            Mensajes
           </div>
         </div>
         <div className="bg-black/0 flex flex-row gap-2 w-full h-10 font-['Poppins'] items-start pt-2 px-4">
@@ -91,9 +82,12 @@ const Sidebar = () => {
             id="FilterOrganization"
             className="w-6"
           />
-          <div className="text-sm leading-[22px] text-[#565e6c] mt-px">
-            Integrations
-          </div>
+          <Link
+            to="/integracion-de-materias"
+            className="text-sm leading-[22px] text-[#565e6c] mt-px"
+          >
+            Integración de Materias
+          </Link>
         </div>
         <div className="bg-black/0 flex flex-row gap-2 w-full h-10 font-['Poppins'] items-start pt-2 px-4">
           <img

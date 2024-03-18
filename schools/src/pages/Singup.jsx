@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { loginWithGoogleAsync, signup } from "../redux/authActions";
+
 import GoogleLogo from "../assets/GoogleLogo";
+import { loginWithGoogleAsync, signup } from "../redux/actions/authActions";
 
 const Singup = () => {
 

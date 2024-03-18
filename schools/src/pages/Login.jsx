@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-import { loginAsync, loginWithGoogleAsync } from "../redux/authActions";
+
 import GoogleLogo from "../assets/GoogleLogo";
+import { loginAsync, loginWithGoogleAsync } from "../redux/actions/authActions";
 
 const Login = () => {
   const [email, setEmail] = useState("");

@@ -4,17 +4,21 @@ import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Singup from "../pages/Singup";
 import ProfileStudents from "../pages/ProfileStudents";
+import SubjectSelection from "../pages/SubjectSelection";
 
 
 const AppRouters = () => {
   return (
     <>
-        <Routes>
+    <div className="h-full max-h-screen mx-auto w-full">
+        <Routes >
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/sing-up" element={<Singup />} />
           <Route path="/profile-students" element={<ProfileStudents />} />
+          <Route path="/integracion-de-materias" element={<SubjectSelection/>} />
         </Routes>
+    </div>
       <Footer />
     </>
   );

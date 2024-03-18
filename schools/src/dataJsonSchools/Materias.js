@@ -1,10 +1,6 @@
 
   export const Materias = [
-      {
-        "nombre": "Matemáticas",
-        "creditos": 3,
-        "precio_por_credito": 150
-      },
+      
       {
         "nombre": "Ciencias",
         "creditos": 3,
@@ -49,5 +45,10 @@
         "nombre": "Economía",
         "creditos": 3,
         "precio_por_credito": 150
-      }
+      },
+      {
+        "nombre": "Matemáticas",
+        "creditos": 3,
+        "precio_por_credito": 150
+      },
     ]
