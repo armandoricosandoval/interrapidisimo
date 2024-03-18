@@ -45,9 +45,12 @@ const Sidebar = () => {
             id="Folder"
             className="w-6"
           />
-          <div className="text-sm leading-[22px] text-[#565e6c] mt-px">
+          <Link
+              to="/profile-students"
+              className="text-sm font-bold leading-[22px] text-[#6355d8] mt-px"
+            >
             Materias Inscritas
-          </div>
+          </Link>
         </div>
         <div className="bg-black/0 flex flex-row gap-2 w-full h-10 items-start pt-2 px-4">
           <img

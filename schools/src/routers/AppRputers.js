@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import { Footer } from "../assets/Footer";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
@@ -20,7 +20,8 @@ const AppRouters = () => {
           <Route path="/profile-students" element={<ProfileStudents />} />
           <Route path="/integracion-de-materias" element={<SubjectSelection/>} />
           <Route path="/studentsList" element={<Students/>} />
-          <Route path="*" component={NotFoundPage} />
+          <Route path="*" element={<Navigate to="/not-found" />} />
+          <Route path="/not-found" element={<NotFoundPage />} />
         </Routes>
     </div>
       <Footer />
