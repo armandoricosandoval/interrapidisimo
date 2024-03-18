@@ -9,7 +9,7 @@ const Sidebar = () => {
   return (
     <div
       id="SidebarRoot"
-      className="border-solid border-[#bcc1ca]  bg-white flex flex-col gap-8 w-48 h-[791px] items-start py-6 border"
+      className="border-solid border-[#bcc1ca]  bg-white flex flex-col gap-8 w-full max-w-52 h-[791px] items-start py-6 border"
     >
       <img
         src={process.env.PUBLIC_URL + "/img/Logoalterno2.png"}
@@ -99,7 +99,7 @@ const Sidebar = () => {
             id="SettingsGear"
             className="w-6"
           />
-          <div className="text-sm leading-[22px] text-[#565e6c] mt-px">
+          <div className="text-sm leading-[22px] text-[#565e6c] ">
             Settings
           </div>
         </div>

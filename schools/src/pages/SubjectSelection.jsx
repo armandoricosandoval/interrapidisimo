@@ -4,6 +4,7 @@ import Sidebar from '../assets/Sidebar';
 import { Materias } from '../dataJsonSchools/Materias';
 import { useEffect } from 'react';
 import CombinarMathandMiss from '../dataJsonSchools/CombinarMathandMiss';
+import { Link } from 'react-router-dom';
 
 
 const SubjectSelection = () => {
@@ -12,12 +13,12 @@ const SubjectSelection = () => {
     const authState = useSelector((state) => state.auth);
 
 
-    
+
     useEffect(() => {
-        
+
         CombinarMathandMiss()
     }, [])
-    
+
 
     const handleSelect = (subject) => {
 
@@ -32,66 +33,71 @@ const SubjectSelection = () => {
         dispatch(deselectSubject(subject));
     };
 
-    // Renderiza la lista de materias con botones de selección/deselección
-
     return (
-        <div className="flex flex-row mx-auto h-auto max-h-screen ">
+        <div className="flex flex-row mx-auto h-auto ">
             <Sidebar />
+            <div className='flex flex-row justify-center items-start mx-auto w-full px-5'>
 
-            <article className="py-5 rounded-xl sm:max-w-md lg:max-w-xl w-full border border-gray-700 bg-gray-800 p-4 h-full max-h-xl justify-center mt-10 ml-24">
-                <div className="flex items-center gap-4">
-                    <img
-                        alt=""
-                        src="https://file.rendit.io/n/C8iqydi42IDJTNEZdzA3.png"
-                        className="size-16 rounded-full object-cover"
-                    />
+                <div className="py-5 rounded-xl w-1/2 border border-gray-700 bg-gray-800 mt-10 ml-5 px-2">
+                    <div className="flex items-center gap-4">
+                        <img
+                            alt=""
+                            src="https://file.rendit.io/n/C8iqydi42IDJTNEZdzA3.png"
+                            className="size-16 rounded-full object-cover"
+                        />
 
-                    <div>
-                        <h3 className="text-lg font-medium text-black">Estudiante</h3>
+                        <div>
+                            <h3 className="text-lg font-medium text-black">Estudiante</h3>
 
-                        <div className="text-2xl leading-[36px] text-[#171a1f]">
-                            {authState.currentUser && authState.currentUser.email}
+                            <div className="text-xl] text-[#171a1f]">
+                                {authState.currentUser && authState.currentUser.email}
+                            </div>
                         </div>
                     </div>
+
+                    <ul className="mt-4 space-y-2 ">
+                        {subjects?.map((subject, index) => (
+                            <li key={index} onClick={() => handleDeselect(subject)} className='text-gray-700 hover:bg-gray-50 focus:relative cursor-auto'>
+                                <div className="block h-full rounded-lg border border-gray-700 p-4 hover:border-blue-600">
+                                    <strong className="font-medium text-vl-500">{subject.nombre}</strong>
+                                    <button
+                                        className="inline-block p-3 text-gray-700 hover:bg-gray-50 focus:relative"
+                                        title="Delete Product"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            strokeWidth="1.5"
+                                            stroke="currentColor"
+                                            className="h-4 w-4"
+                                        >
+                                            <path
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <p className="mt-1 text-base font-medium text-gray-300">
+                                        Créditos: {subject.creditos}
+                                    </p>
+                                    <p className="mt-1 text-xs font-medium text-gray-300">
+                                        Precio por crédito: ${subject.precio_por_credito} USD
+                                    </p>
+                                </div>
+                            </li>
+                        ))}
+                    </ul>
+                    <div className=" box-border w-full h-[44px] justify-center mt-3  bg-vl-400 rounded-[6px] overflow-hidden text-white">
+                        {subjects?.length > 0 && <Link to="/studentsList" className='flex items-center justify-center gap-2 '>                            
+                            <span className="mt-3"> Ver la Comunidad </span>
+                        </Link>}
+                    </div>
+
                 </div>
 
-                <ul className="mt-4 space-y-2 ">
-                    {subjects?.map((subject, index) => (
-                        <li key={index} onClick={() => handleDeselect(subject)} className='text-gray-700 hover:bg-gray-50 focus:relative cursor-auto'>
-                            <div className="block h-full rounded-lg border border-gray-700 p-4 hover:border-blue-600">
-                                <strong className="font-medium text-vl-500">{subject.nombre}</strong>
-                                <button
-                                    className="inline-block p-3 text-gray-700 hover:bg-gray-50 focus:relative"
-                                    title="Delete Product"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        strokeWidth="1.5"
-                                        stroke="currentColor"
-                                        className="h-4 w-4"
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
-                                        />
-                                    </svg>
-                                </button>
-                                <p className="mt-1 text-base font-medium text-gray-300">
-                                    Créditos: {subject.creditos}
-                                </p>
-                                <p className="mt-1 text-xs font-medium text-gray-300">
-                                    Precio por crédito: ${subject.precio_por_credito} USD
-                                </p>
-                            </div>
-                        </li>
-                    ))}
-                </ul>
-            </article>
-            <div>
-                <article className="py-5 rounded-xl sm:max-w-md lg:max-w-3xl w-full border border-gray-700 bg-gray-800 p-4 h-auto justify-center mt-10 ml-24">
+                <div className="py-5 rounded-xl w-1/2 border border-gray-700 bg-gray-800 mt-10 ml-5 px-2">
                     <h3 className="text-lg font-medium text-black">Listado De Materias:</h3>
 
                     <ul className="mt-4 space-y-2 grid md:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
@@ -131,7 +137,8 @@ const SubjectSelection = () => {
                             </li>
                         ))}
                     </ul>
-                </article>
+                </div>
+
             </div>
         </div>
 
