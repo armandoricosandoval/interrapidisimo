@@ -24,7 +24,7 @@ const Home = () => {
             </p>
             <div className="flex mt-12">
               <Link
-                to="/singup"
+                to="/sing-up"
                 className="w-[145px] bg-vl-600 h-[52px] rounded-[6px] overflow-hidden text-center"
               >
                 <div className="p-2 font-normal text-white text-xl tracking-[0] leading-[28px]">

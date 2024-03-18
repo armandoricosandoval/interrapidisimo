@@ -3,13 +3,13 @@ import { GoogleAuthProvider, getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAXQM2bCm3qLgg-ZhfYMqMJ3uKP_x7mES0",
-  authDomain: "startupvortex-7dc99.firebaseapp.com",
-  projectId: "startupvortex-7dc99",
-  storageBucket: "startupvortex-7dc99.appspot.com",
-  messagingSenderId: "159573419709",
-  appId: "1:159573419709:web:cf0296df3136e29d63b9d4",
-  measurementId: "G-BTHX4Z79H3",
+  apiKey: "AIzaSyCK-dwW2ISCrgmf0jnO6ARUNczMMuuRB3c",
+  authDomain: "interrapidisimoprueba.firebaseapp.com",
+  projectId: "interrapidisimoprueba",
+  storageBucket: "interrapidisimoprueba.appspot.com",
+  messagingSenderId: "709086552686",
+  appId: "1:709086552686:web:9e361084368af8d722bc7f",
+  measurementId: "G-50WRJPVZRG"
 };
 const firebaseApp = initializeApp(firebaseConfig);
 
