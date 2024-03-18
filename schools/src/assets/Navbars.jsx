@@ -12,13 +12,13 @@ const Navbars = () => {
             to="/login"
             className="bg-vl-600 text-black px-4 py-2 rounded focus:outline-none focus:shadow-outline-blue"
           >
-            Sign In
+            Inicia Sesión
           </Link>
           <Link
             to="/sing-up"
             className="bg-vl-300 text-black px-4 py-2 rounded focus:outline-none focus:shadow-outline-green"
           >
-            Sign Up
+            Registrate
           </Link>
         </div>
       </div>

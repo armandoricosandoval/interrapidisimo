@@ -52,7 +52,7 @@ export const loginAsync = (email, password) => async (dispatch) => {
     dispatch(setCurrentUser(res.user));
     dispatch(setAuthSuccess("Login successful."));
   } catch (error) {
-    dispatch(setAuthError("Failed to log in."));
+    dispatch(setAuthError("Error al registrar"));
   } finally {
     dispatch(setAuthLoading(false));
   }
@@ -65,7 +65,7 @@ export const signup = (email, password) => async (dispatch) => {
     await createUserWithEmailAndPassword(firebaseAppAuth, email, password);
     dispatch(setRegisterAuthSuccess("singup successful."));
   } catch (error) {
-    dispatch(setAuthError("Failed to log in."));
+    dispatch(setAuthError("Error al registrar"));
   } finally {
     dispatch(setAuthLoading(false));
   }
@@ -83,7 +83,7 @@ export const loginWithGoogleAsync = () => async (dispatch) => {
     dispatch(setCurrentUser(res.user));
     dispatch(setAuthSuccess("Login successful."));
   } catch (error) {
-    dispatch(setAuthError("Failed to log in with Google."));
+    dispatch(setAuthError("Error al registrar con Google."));
   } finally {
     dispatch(setAuthLoading(false));
   }
@@ -95,7 +95,7 @@ export const logout = () => async (dispatch) => {
     dispatch(setCurrentUser(null));
     dispatch(setAuthSuccess(""));
   } catch (error) {
-    dispatch(setAuthError("Failed to log in with Google."));
+    dispatch(setAuthError("Error al registrar con Google."));
   } finally {
     dispatch(setAuthLoading(false));
   }
