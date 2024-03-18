@@ -8,7 +8,7 @@ const Home = () => {
       <div className="container mx-auto px-2 h-auto">
         <Navbars />
         <div className="relative w-full h-auto bg-white flex flex-row items-center justify-center px-10 mt-10">
-          <div className="flex flex-col mx-auto justify-center ml-5 w-auto">
+          <div className=" flex-col mx-auto justify-center ml-5 w-auto hidden md:flex">
             <div className="mt-2 font-bold text-black text-xl md:text-5xl ">
               Prueba de Registro Estudiantil
             </div>

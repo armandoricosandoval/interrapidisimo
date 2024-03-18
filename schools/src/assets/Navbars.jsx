@@ -10,7 +10,7 @@ const Navbars = () => {
         <div className="flex space-x-4">
           <Link
             to="/login"
-            className="bg-vl-600 text-black px-4 py-2 rounded focus:outline-none focus:shadow-outline-blue"
+            className="bg-vl-600 text-black px-4 py-2 rounded focus:outline-none focus:shadow-outline-blue "
           >
             Inicia Sesión
           </Link>
