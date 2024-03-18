@@ -6,14 +6,15 @@ import { useEffect } from 'react';
 import CombinarMathandMiss from '../dataJsonSchools/CombinarMathandMiss';
 
 
-
 const SubjectSelection = () => {
     const subjects = useSelector(state => state.student.selectedSubjects);
     const dispatch = useDispatch();
     const authState = useSelector((state) => state.auth);
+
+
     
-    console.log('Materias :', Materias);
     useEffect(() => {
+        
         CombinarMathandMiss()
     }, [])
     

@@ -5,6 +5,7 @@ import Login from "../pages/Login";
 import Singup from "../pages/Singup";
 import ProfileStudents from "../pages/ProfileStudents";
 import SubjectSelection from "../pages/SubjectSelection";
+import Students from "../pages/Students";
 
 
 const AppRouters = () => {
@@ -17,6 +18,7 @@ const AppRouters = () => {
           <Route path="/sing-up" element={<Singup />} />
           <Route path="/profile-students" element={<ProfileStudents />} />
           <Route path="/integracion-de-materias" element={<SubjectSelection/>} />
+          <Route path="/studentsList" element={<Students/>} />
         </Routes>
     </div>
       <Footer />

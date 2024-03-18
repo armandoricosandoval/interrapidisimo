@@ -57,7 +57,7 @@ const Sidebar = () => {
             className="w-6"
           />
           <Link
-            to="/writers"
+            to="/studentsList"
             className="text-sm leading-[22px] text-[#565e6c] mt-px"
           >
             Comunidad Estudiantil

@@ -7,9 +7,7 @@ const initialState = {
 const studentReducer = (state = initialState, action) => {
   switch (action.type) {
     case SELECT_SUBJECT:
-      console.log(' action.payload :',  action.payload);
 
-        console.log(' ssssss:', state);
       return {
         ...state,
         selectedSubjects: [...state.selectedSubjects, action.payload]
