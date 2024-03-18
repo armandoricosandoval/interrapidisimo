@@ -1,7 +1,7 @@
 export const Footer = () => {
   return (
-    <div className="flex flex-col max-w-full h-20  mx-auto justify-center items-center bg-[#000000] fixed bottom-0 w-full">
-      <p className=" text-white text-sm">
+    <footer className="flex flex-col max-w-full h-20 mx-auto justify-center items-center bg-[#000000] fixed bottom-0 w-full">
+      <p className="text-white text-sm">
         © prueba INTERRAPIDISIMO Media Direct, LLC. All rights reserved
       </p>
       <div className="flex mt-4 justify-between items-center mx-auto gap-4">
@@ -13,6 +13,6 @@ export const Footer = () => {
 
         <div className="text-white text-sm">Devices</div>
       </div>
-    </div>
+    </footer>
   );
 };

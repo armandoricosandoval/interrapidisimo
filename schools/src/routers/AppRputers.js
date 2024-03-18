@@ -12,7 +12,7 @@ import NotFoundPage from "../pages/NotFoundPage";
 const AppRouters = () => {
   return (
     <>
-    <div className="h-full max-h-screen mx-auto w-full">
+    <div className="h-full max-h-screen mx-auto w-full relative pb-80 ">
         <Routes >
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
