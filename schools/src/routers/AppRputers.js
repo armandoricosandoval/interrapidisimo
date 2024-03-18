@@ -6,6 +6,7 @@ import Singup from "../pages/Singup";
 import ProfileStudents from "../pages/ProfileStudents";
 import SubjectSelection from "../pages/SubjectSelection";
 import Students from "../pages/Students";
+import NotFoundPage from "../pages/NotFoundPage";
 
 
 const AppRouters = () => {
@@ -19,6 +20,7 @@ const AppRouters = () => {
           <Route path="/profile-students" element={<ProfileStudents />} />
           <Route path="/integracion-de-materias" element={<SubjectSelection/>} />
           <Route path="/studentsList" element={<Students/>} />
+          <Route path="*" component={NotFoundPage} />
         </Routes>
     </div>
       <Footer />
